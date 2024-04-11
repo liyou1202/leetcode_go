@@ -12,3 +12,30 @@ func RemoveDuplicates(nums []int) int {
 	}
 	return count
 }
+
+// RemoveDuplicates2
+// https://redirect.liyou-chen.com/fzbpny
+func RemoveDuplicates2(nums []int) int {
+	size := len(nums)
+	if size <= 2 {
+		return size
+	}
+
+	count := 1
+	duplicateCount := 0
+	for i := 1; i < size; i++ {
+		if nums[i] != nums[i-1] {
+			nums[count] = nums[i]
+			count++
+			duplicateCount = 0
+			continue
+		}
+
+		if duplicateCount < 1 {
+			nums[count] = nums[i]
+			count++
+			duplicateCount++
+		}
+	}
+	return count
+}
