@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	nums1 := []int{2, 2, 1, 1, 1, 2, 2}
-	k := arr.MajorityElement(nums1)
-	fmt.Print(nums1, k)
+	nums1 := []int{1, 2, 3, 4, 5, 6, 7}
+	k := 3
+	arr.Rotate(nums1, k)
+	fmt.Print(nums1)
 }
