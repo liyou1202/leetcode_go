@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	nums1 := []int{1, 2, 3, 0, 0, 0}
-	nums2 := []int{2, 5, 6}
-	var m, n int = 3, 3
-	arr.MergeSortedArr(nums1, m, nums2, n)
-	fmt.Print(nums1)
+	nums1 := []int{0, 1, 2, 2, 3, 0, 4, 2}
+
+	k := arr.RemoveElement(nums1, 2)
+	fmt.Print(nums1, k)
 }
