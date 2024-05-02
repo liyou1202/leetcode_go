@@ -1,23 +1,12 @@
 package main
 
-func main() {
-	nums1 := []int{7, 1, 5, 3, 6, 4}
-	println(maxProfit(nums1))
-}
+import (
+	"fmt"
+	"leetcodePractice/arr"
+)
 
-func maxProfit(prices []int) int {
-	profit := 0
-	buy := prices[0]
-	for i := 1; i < len(prices); i++ {
-		if prices[i] < buy {
-			buy = prices[i]
-			continue
-		}
-		temp := prices[i] - buy
-		if profit > 0 {
-			profit += temp
-			buy = prices[i]
-		}
-	}
-	return profit
+func main() {
+	heightArr := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	area := arr.MaxArea(heightArr)
+	fmt.Println(area)
 }
