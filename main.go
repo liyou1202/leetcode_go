@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	input := "MCMXCIV"
-	result := arr.RomanToInt(input)
+	input := "   fly me   to   the moon  "
+	result := arr.LengthOfLastWord(input)
 	fmt.Println(result)
 }
