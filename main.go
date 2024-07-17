@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	input := "   fly me   to   the moon  "
-	result := arr.LengthOfLastWord(input)
+	strs := []string{
+		"a", "ab",
+	}
+	result := arr.LongestCommonPrefix(strs)
 	fmt.Println(result)
 }
