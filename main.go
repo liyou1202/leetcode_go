@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	heightArr := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	area := arr.MaxArea(heightArr)
-	fmt.Println(area)
+	input := "MCMXCIV"
+	result := arr.RomanToInt(input)
+	fmt.Println(result)
 }
