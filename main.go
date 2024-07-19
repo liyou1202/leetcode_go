@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	strs := []string{
-		"a", "ab",
-	}
-	result := arr.LongestCommonPrefix(strs)
+	input := "0P"
+	result := arr.IsPalindrome(input)
 	fmt.Println(result)
 }
