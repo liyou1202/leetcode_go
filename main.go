@@ -6,9 +6,11 @@ import (
 )
 
 func main() {
-	input := []int{
-		0, 1, 2, 4, 5, 7,
+	input := [][]int{
+		{1, 4},
+		{0, 4},
 	}
-	result := intervals.SummaryRanges(input)
+
+	result := intervals.Merge(input)
 	fmt.Println(result)
 }
